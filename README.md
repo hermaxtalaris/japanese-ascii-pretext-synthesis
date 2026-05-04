@@ -25,7 +25,7 @@ Four Japanese ink / ukiyo-e inspired ASCII + Pretext synthesis pages, plus V2 va
 
 - Slower pulse and tearing cadence.
 - Longer, softer click pulse decay.
-- Detailed shadowy cipherpunk scene layer: figure-free shadow-cipherpunk atmosphere: relay arcs, encrypted rain, dead-drop glyph fields, cable/relay lines, mesh-radio tags, and Pretext text columns.
+- Removed the extra shadow-cipherpunk scene layer, including robe markings, PGP/SHA/TOR/mesh/hash glyphs, and cable/relay lines.
 - Original source-image/ASCII synthesis preserved alongside the new V2 pages.
 
 ## Local source

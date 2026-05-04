@@ -1,0 +1,121 @@
+[
+  {
+    "piece": "01_crane_bamboo_ascii_ma",
+    "kind": "png",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/01_crane_bamboo_ascii_ma.png",
+    "bytes": 2345183,
+    "sha256": "efc2f1fb9d710526b4bd5b109bfc655b7841ca2ecb3d6239d71aa8191709aa20"
+  },
+  {
+    "piece": "01_crane_bamboo_ascii_ma",
+    "kind": "txt",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/01_crane_bamboo_ascii_ma.txt",
+    "bytes": 9990,
+    "sha256": "204dca32a6f74cc16b034a92814f25e1c4094f5753b65f43097d36875e2cce50"
+  },
+  {
+    "piece": "01_crane_bamboo_ascii_ma",
+    "kind": "html",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/01_crane_bamboo_ascii_ma.html",
+    "bytes": 1349994,
+    "sha256": "e64a6f536ccb7e3ada1ce7937a4ae85e42dba93a01313052a696234930d3bf77"
+  },
+  {
+    "piece": "01_crane_bamboo_ascii_ma",
+    "kind": "source",
+    "path": "/home/kuiqs/fal-outputs/japanese-ink-ukiyoe-test-prints-2026-05-04/01_sumi_crane_bamboo.png",
+    "bytes": 1007535,
+    "sha256": "68012db1d4eda235e7a66e44fbce2f904f0c8143b5febd662e03eab554f27869"
+  },
+  {
+    "piece": "02_moon_bridge_rain_keyblock",
+    "kind": "png",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/02_moon_bridge_rain_keyblock.png",
+    "bytes": 2793666,
+    "sha256": "81936de2f635214568c518a7ca9c4639ae8185fd4561d7d821c1fdc6d4e38ea1"
+  },
+  {
+    "piece": "02_moon_bridge_rain_keyblock",
+    "kind": "txt",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/02_moon_bridge_rain_keyblock.txt",
+    "bytes": 9990,
+    "sha256": "942855836197c5489e31ef6660b454b65de33a92dd7f976423e48a9780c994fd"
+  },
+  {
+    "piece": "02_moon_bridge_rain_keyblock",
+    "kind": "html",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/02_moon_bridge_rain_keyblock.html",
+    "bytes": 1462598,
+    "sha256": "f8913d1ccb07a065799478af51d8ced5e0137cf8308af5220507893ee9131f1d"
+  },
+  {
+    "piece": "02_moon_bridge_rain_keyblock",
+    "kind": "source",
+    "path": "/home/kuiqs/fal-outputs/japanese-ink-ukiyoe-test-prints-2026-05-04/02_ukiyoe_moon_bridge_rain.png",
+    "bytes": 1092107,
+    "sha256": "e52e81f7dda9a4d4e36e4eb00aa46775fcaf2123a4649e286c294e2b8d337c62"
+  },
+  {
+    "piece": "03_torii_fox_signal_path",
+    "kind": "png",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/03_torii_fox_signal_path.png",
+    "bytes": 2877242,
+    "sha256": "27c47e088af28d2ad2b3f703f8171a582abe2c5d1d30fce0451bcc47499777dd"
+  },
+  {
+    "piece": "03_torii_fox_signal_path",
+    "kind": "txt",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/03_torii_fox_signal_path.txt",
+    "bytes": 9990,
+    "sha256": "fa49c62fd674d40b3fb61aa75e6dc1d46457a853e254213006f16e2d11eadfe6"
+  },
+  {
+    "piece": "03_torii_fox_signal_path",
+    "kind": "html",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/03_torii_fox_signal_path.html",
+    "bytes": 1630059,
+    "sha256": "224e88fc73d5720693d393c810c956d8c460e86ecfced04f8f804e597838a229"
+  },
+  {
+    "piece": "03_torii_fox_signal_path",
+    "kind": "source",
+    "path": "/home/kuiqs/fal-outputs/japanese-ink-ukiyoe-test-prints-2026-05-04/03_fox_shrine_autumn.png",
+    "bytes": 1217616,
+    "sha256": "343ccc53cb52b2d95f6e103d7880b26ee481f08583cc759c00e65e3464e5fd52"
+  },
+  {
+    "piece": "04_mountain_wave_braille_mist",
+    "kind": "png",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/04_mountain_wave_braille_mist.png",
+    "bytes": 2253541,
+    "sha256": "b066beefdedc2ec501127648a4a766c99784fa5423df436aadc21cde5acbb0a3"
+  },
+  {
+    "piece": "04_mountain_wave_braille_mist",
+    "kind": "txt",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/04_mountain_wave_braille_mist.txt",
+    "bytes": 9990,
+    "sha256": "e14264c902ac539bd6ea3fb6995a1cace8883636ab9c21df6a3f008af7c54d9d"
+  },
+  {
+    "piece": "04_mountain_wave_braille_mist",
+    "kind": "html",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/04_mountain_wave_braille_mist.html",
+    "bytes": 1376149,
+    "sha256": "9b0c5cfd2876fa7b98468ea04441892d25a0d8c5be1efa78d526edec1e22ee97"
+  },
+  {
+    "piece": "04_mountain_wave_braille_mist",
+    "kind": "source",
+    "path": "/home/kuiqs/fal-outputs/japanese-ink-ukiyoe-test-prints-2026-05-04/04_sumi_mountain_seascape.png",
+    "bytes": 1027324,
+    "sha256": "0872d16611c39261354dea95a7805ac5b5b3d298f3a9f537974c78ef6731724f"
+  },
+  {
+    "piece": "all",
+    "kind": "contact_sheet",
+    "path": "/home/kuiqs/fal-outputs/japanese-ascii-pretext-synthesis-2026-05-04/contact_sheet.png",
+    "bytes": 1905537,
+    "sha256": "100129988492bd01c0d286fa226418b3fbe2e534c6633371c184b1f31ffe9b16"
+  }
+]

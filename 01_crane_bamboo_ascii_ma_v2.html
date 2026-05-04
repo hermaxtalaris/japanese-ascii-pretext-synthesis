@@ -16,23 +16,6 @@ const prepared=prepareWithSegments(corpus, "14px Georgia");
 const sceneText="shadow cipherpunk crane-node bamboo relay soft cloak passphrase ghost key washi firewall ink mask reed antenna quiet packet moonlit proxy hooded courier zero trust sumi terminal feathered signal ".repeat(90);
 const preparedScene=prepareWithSegments(sceneText, "11px Georgia");
 function roundedRect(x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
-function drawCipherpunkFigure(cx,base,scale,phase,accent){
-  ctx.save();
-  ctx.translate(cx,base); ctx.scale(scale,scale);
-  ctx.globalAlpha=.84;
-  ctx.shadowColor='rgba(0,0,0,.55)'; ctx.shadowBlur=22;
-  ctx.fillStyle='rgba(5,8,10,.82)';
-  ctx.beginPath(); ctx.moveTo(-28,-8); ctx.bezierCurveTo(-46,-82,-30,-132,0,-150); ctx.bezierCurveTo(30,-132,46,-82,28,-8); ctx.quadraticCurveTo(0,8,-28,-8); ctx.fill();
-  ctx.fillStyle='rgba(10,13,15,.92)'; ctx.beginPath(); ctx.moveTo(-45,10); ctx.lineTo(-24,-98); ctx.quadraticCurveTo(0,-138,24,-98); ctx.lineTo(45,10); ctx.quadraticCurveTo(0,28,-45,10); ctx.fill();
-  ctx.strokeStyle=rgba(pal.accent,.72); ctx.lineWidth=1.1; for(let i=-3;i<=3;i++){ctx.beginPath(); ctx.moveTo(i*9,-78); ctx.lineTo(i*15,6); ctx.stroke();}
-  ctx.fillStyle='rgba(0,0,0,.74)'; ctx.beginPath(); ctx.ellipse(0,-103,18,24,0,0,Math.PI*2); ctx.fill();
-  ctx.strokeStyle=rgba(pal.blue,.86); ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(-10,-105); ctx.lineTo(-3,-101); ctx.lineTo(5,-104); ctx.lineTo(13,-99); ctx.stroke();
-  ctx.fillStyle=rgba(pal.accent,.72+.18*Math.sin(phase)); ctx.font='8px monospace';
-  ['0xKAGE','PGP','SHA','NULL','TOR'].forEach((s,i)=>ctx.fillText(s,-18,-58+i*13));
-  ctx.strokeStyle=rgba(pal.ink,.62); ctx.lineWidth=1.4; ctx.beginPath(); ctx.moveTo(-32,-40); ctx.bezierCurveTo(-70,-70,-80,-28,-106,-56); ctx.stroke();
-  ctx.beginPath(); ctx.moveTo(32,-38); ctx.bezierCurveTo(76,-62,88,-8,118,-30); ctx.stroke();
-  ctx.restore();
-}
 function drawCipherpunkScene(){
   ctx.save();
   const slow=Math.sin(t*.72), drift=Math.sin(t*.43)*8;
@@ -40,9 +23,14 @@ function drawCipherpunkScene(){
   let grd=ctx.createLinearGradient(0,0,W,H); grd.addColorStop(0,'rgba(18,22,24,.10)'); grd.addColorStop(.58,'rgba(0,0,0,.18)'); grd.addColorStop(1,'rgba(0,0,0,.05)'); ctx.fillStyle=grd; ctx.fillRect(0,0,W,H);
   ctx.globalCompositeOperation='source-over';
   ctx.strokeStyle=rgba(pal.ink,.18); ctx.lineWidth=1; for(let k=0;k<7;k++){let y=H*(.18+k*.095)+Math.sin(t*.28+k)*9; ctx.beginPath(); ctx.moveTo(0,y); ctx.bezierCurveTo(W*.28,y-36,W*.58,y+44,W,y-18); ctx.stroke();}
-  drawCipherpunkFigure(W*.24+drift,H*.78,.92,.9+slow,pal.accent);
-  drawCipherpunkFigure(W*.51-drift*.45,H*.82,1.08,1.8+slow,pal.blue);
-  drawCipherpunkFigure(W*.77+drift*.25,H*.76,.82,2.6+slow,pal.accent);
+  // Hooded figures removed per request; retain shadow-cipherpunk atmosphere as relay arcs, encrypted rain, and glyph fields.
+  ctx.save();
+  ctx.globalAlpha=.52;
+  ctx.strokeStyle=rgba(pal.ink,.22); ctx.lineWidth=1.2;
+  for(let r=0;r<5;r++){let cx=W*(.18+r*.16)+Math.sin(t*.3+r)*16; let cy=H*(.62+.06*Math.sin(t*.24+r)); ctx.beginPath(); ctx.ellipse(cx,cy,48+r*11,16+r*4,Math.sin(t*.18+r)*.3,0,Math.PI*2); ctx.stroke();}
+  ctx.fillStyle=rgba(pal.accent,.18); ctx.font='10px monospace';
+  for(let i=0;i<64;i++){let x=(i*73+t*18)%W, y=H*.52+Math.sin(i*.77+t*.55)*H*.22; ctx.fillText(['dead drop','mesh relay','pgp rain','proxy gate','salt path','null shrine'][i%6],x,y);}
+  ctx.restore();
   ctx.save(); ctx.font='11px Georgia'; ctx.fillStyle=rgba(pal.ink,.28); ctx.globalAlpha=.88;
   const columns=[W*.07,W*.35,W*.63,W*.84];
   columns.forEach((x,ci)=>{const lines=layoutWithLines(preparedScene,Math.max(120,W*.16),14).lines; for(let j=0;j<Math.min(lines.length,Math.floor(H/15)-10);j+=2){let yy=64+j*15+((ci%2?1:-1)*Math.sin(t*.6+j*.07)*3); if((j+ci)%9===0) ctx.fillStyle=rgba(pal.accent,.34); else ctx.fillStyle=rgba(pal.ink,.24); ctx.fillText(lines[(j+ci*11)%lines.length].text,x+Math.sin(t*.35+j)*7,yy);}});
